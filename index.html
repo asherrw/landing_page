@@ -17,7 +17,7 @@
             letter-spacing: 5px;
         }
         div{
-            border-style: solid; border-color: blue; border-width: 4px;
+            /* border-style: solid; border-color: blue; border-width: 4px; */
         }
         div .flex-container1{
             justify-content: space-between;
@@ -27,18 +27,21 @@
             padding:5px;
             margin: 12px;
         }
-        div .flex-container1 #links{
-            gap: 8px;
-        }
         div .flex-container1 #links a{
             height: fit-content;
-            border-style: solid; border-color:gold; border-width: 2px;
+            /* border-style: solid; border-color:gold; border-width: 2px; */
             flex-direction: row;
             box-sizing: border-box;
             margin:5px
         }
         a { text-decoration: none; }
         a:hover { color:rgb(101, 130, 101)}
+
+        .underline{
+            border-style: solid; border-color: white; border-width: 2px;
+            margin-bottom: 20px;
+        }
+
         .div2{
             background-image: url(images/vine_fenced.jpeg);
             padding:200px;
@@ -54,6 +57,59 @@
             border-radius: 10px;
         }
         button:hover { color:rgb(101, 130, 101)}
+
+        .div3 h2{
+            text-align: center;
+            padding: 19px;
+            margin-top: 70px;
+        }
+        .div3 div{
+            display:flex;
+            justify-content: center;
+            gap: 50px;
+        }
+        .div3 div > div{
+            border-style: solid; border-color:rgb(101, 130, 101); border-width: 2px; border-radius: 15px;
+            height: 150px; width: 160px;
+            text-align: center; align-items: center;
+            margin-bottom:100px;
+        }
+
+        .div4{
+            background-color: rgb(101,130,101);
+            display: flex;
+            flex-direction:column;
+            padding: 120px;
+            font-size: 22px;
+            margin: 10px;
+        }
+        .div4 .name{
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .div5{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1 1 auto;
+            gap: 40px;
+            /* background-color: rgb(56, 127, 75); */
+            box-sizing: border-box;
+            padding: 50px;
+            margin: 70px; margin-top: 70px; margin-left: 300px; margin-right: 300px;
+            background-image: url(images/wild_vines.jpeg);
+        }
+        .div5 >{
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer{
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
     </style>
 </head>
 
@@ -73,16 +129,41 @@
     </div>
 </div>
 
+<div class="underline"></div>
+
 <div class="div2">
     <h1>Prometheus</h1>
     <p>The Titan lifted the flames from the Gods and offered them to man, hiding the fire inside of a fennel stalk; Prometheus was punished, liver torn, regrown, re-torn each passing day. Chains restricted his body to the peak of the Causcaus mountains, though, his eyes could reach as far as Mestia, a village. He watched the people gather to place their sacred meat upon a pile of wood, kindling, and fennel stalks.</p>
     <button>press to grow plants</button>
 </div>
 
-<div class="div3"></div>
+<div class="div3">
+    <h2>some random information</h2>
+    <div>                                     <!--FLEX CONTAINER 2-->
+        <div>box1</div>
+        <div>box2</div>
+        <div>box3</div>
+        <div>box4</div>
+    </div>
+</div>
 
-<div class="div4"></div>
+<div class="div4">
+    <p><strong>“But in a solitary life, there are rare moments when another soul dips near yours, as stars once a year brush the earth. Such a constellation was he to me.” </strong></p>
+    <p class="name"> - <em>Circe </em>, by Madeline Miller</p>
+</div>
 
+<div class="div5">
+    <div>
+        <div>We say allez!</div>
+        <div>Sign up to never miss a shop update</div>
+    </div>
+    <button>Sign Up</button>
+</div>
+
+<div class="underline"></div>
+<div class="underline"></div>
+
+<footer>Copyright © Asher Wood 2022</footer>
 
 </body>
 </html>
